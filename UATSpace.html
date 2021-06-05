@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!--UAT SPacePage
+    Written By. Charlie Williams
+    Chawilli@uat.edu
+    10May2021-->
+<!--Lady Luck Casino and Corp.
+
+Welcome to Lady Luck Casino where everyone is a winner. We are very excited 
+to be able to offer you the best expierience at our Craps table game. Customers
+who play this game will have full access to either Win, Lose or Try again. 
+The rules are very simple if you roll a 7 or 11 you Lose. But If you roll any other 
+number you Try again. And most important if you roll a Double Even Pair example (2-2)
+ Hurray you win... And congratulation we are here to provide a awesome 
+ service as we are excited for you to join this experience with us...-->
+<html>
+
+<head>
+    <link href="Background Style.css" rel="stylesheet" type="text/css" />
+    <script src="code.js"></script>
+    <title>
+        Charlie Williams UAT Space Mission Page
+    </title>
+</head>
+
+<body>
+    <!--making a table to hold h1 title and jpg-->
+    <table>
+        <td><img src="UATspaceLogo-2 (2).jpg"></td>
+        <td>
+            <h1>
+                UAT Space Program
+            </h1>
+        </td>
+    </table>
+    <table border="2" width="70%">
+        <col style="width: 35%;">
+        <col style="width: 35%;">
+        <thead>
+            <tr styyle="font-family: fantasy;">
+                <th>Data Type</th>
+                <th>Reading</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="seconds">
+                <td>Time Elasped</td>
+                <td>15 seconds</td>
+            </tr>
+            <tr id="latitude">
+                <td>latitude</td>
+                <td>0</td>
+            </tr>
+            <tr id="longitude">
+                <td>longitude</td>
+                <td>0</td>
+            </tr>
+            <tr id="gps_altitude">
+                <td>gps_altitude</td>
+                <td>0</td>
+            <tr>
+            <tr id="bmpSensor_altitude">
+                <td>BMP Sensor Altitude</td>
+                <td>3038..04</td>
+            </tr>
+            <tr id="bmpSensor_pressure">
+                <td>BMP Sensor Pressure</td>
+                <td>2.34</td>
+            </tr>
+            <tr id="bmpSensor_temp">
+                <td>BMP Sensor Temperature</td>
+                <td>0</td>
+            </tr>
+            <tr id="digSensor_temp">
+                <td>Digital Sensor Temperature</td>
+                <td>24.12</td>
+            </tr>
+            <tr id="cssSensor_temp">
+                <td>CSS Sensor Temperature</td>
+                <td>28</td>
+            </tr>
+            <tr id="cssSensor_eCo2">
+                <td>CSS Sensor eCO2</td>
+                <td>400</td>
+            </tr>
+            <tr id="cssSensor_TVOC">
+                <td>CSS Sensor TVOC</td>
+                <td>0</td>
+            </tr>
+            <tr id="UV">
+                <td>UV</td>
+                <td>0</td>
+            </tr>
+            <tr id="accelX">
+                <td>accelX</td>
+                <td>-0.87</td>
+            </tr>
+            <tr id="accelY">
+                <td>accelY</td>
+                <td>-0.02</td>
+            </tr>
+            <tr id="accelZ">
+                <td>accelZ</td>
+                <td>9.61</td>
+            </tr>
+            <tr id="magneticX">
+                <td>magneticX</td>
+                <td>0.13</td>
+            </tr>
+            <tr id="magneticY">
+                <td>magneticY</td>
+                <td>0.67</td>
+            </tr>
+            <tr id="magneticZ">
+                <td>magneticZ</td>
+                <td>-0.24</td>
+            </tr>
+            <tr id="gyroX">
+                <td>gyroX</td>
+                <td>4.66</td>
+            </tr>
+            <tr id="gyroX">
+                <td>gyroX</td>
+                <td>0.01</td>
+            </tr>
+            <tr id="gyroX">
+                <td>gyroX</td>
+                <td>-0.4</td>
+            </tr>
+
+        </tbody>
+    </table>
+    <br>
+    <p id="countdownTimer">Countdown Status...</p>
+    <button class="button"id="startButton" onclick="start();">Start</button>
+    <button class="button" id="stopButton" onclick="stop()">Stop</button>
+    <br>
+    <br>
+    <button class="button" onclick="playStation();">Play Sound</button><br>
+    <button class="button" onclick="playWeeknd();">Play Weeknd</button><br>
+    <script>
+        //we do not need alert anymore
+       //alert("Test of the alert function)";
+    </script>
+
+    <!--Space for the craps game Click to Play Now-->
+    <br>
+    <br>
+    <div id="die1Results">die1 status...</div><br>
+    <div id="die2Results">die2 status...</div><br>
+    <div id="sumResults">sum status...</div><br>
+    <div id="crapsResults">Craps game status...</div><br>
+    <button onclick="playCraps();">Play craps</button><br>
+    <br>
+    <br>
+    <div id="sandRes">Sandbox output</div><br>
+    <button onclick="sandboxTest();">Sandbox Test</button>
+
+
+</body>
+
+</html>
